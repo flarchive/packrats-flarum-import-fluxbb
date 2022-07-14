@@ -1,0 +1,27 @@
+{
+    "name": "packrats/flarum-import-fluxbb",
+    "description": "Import FluxBB data to Flarum",
+    "license": "GPL-3.0-or-later",
+    "type": "flarum-extension",
+    "require": {
+        "php": "^7.3",
+        "flarum/core": "^1.0.0",
+        "ext-imagick": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Packrats\\ImportFluxBB\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "FluxBB Importer",
+            "icon": {
+                "name": "fas fa-file-import",
+                "backgroundColor": "#08c",
+                "color": "#fff"
+            }
+        }
+    },
+    "minimum-stability": "beta"
+}
